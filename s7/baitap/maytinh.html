@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+  <table>
+      <tr>
+         <td> <input type="number" id="so1"> </td>
+         <td> <input type="number" id="so2"> </td>
+      </tr>
+      <tr>
+          <td> <input type="button" value=" addition +" id="cong" onclick="tinh1()">
+              <input type="button" value=" subtraction - " id="tru" onclick="tinh2()">
+          </td>
+          <td> <input type="button" value=" Multiplication(x)" id="nhan" onclick="tinh3()">
+              <input type="button" value=" division(/)" id="chia"  onclick="tinh4()">  </td>
+      </tr>
+      <tr>
+      <td id="ketqua"> Result: </td>
+      </tr>
+  </table>
+<script>
+    function tinh1() {
+        let a =parseInt(document.getElementById("so1").value)
+        let  b= parseInt(document.getElementById("so2").value)
+        let tong= a+b
+        document.getElementById("ketqua").innerText= "Result: " + tong;
+
+    }
+    function tinh2() {
+        let a  =parseInt(document.getElementById("so1").value)
+        let  b = parseInt(document.getElementById("so2").value)
+                let hieu = a-b
+        document.getElementById("ketqua").innerHTML=  "Result" + hieu
+    }
+        function tinh3() {
+            let a = parseInt(document.getElementById("so1").value)
+            let  b= parseInt(document.getElementById("so2").value)
+            let tich = a * b
+            document.getElementById("ketqua").innerHTML= "Result" + tich;
+        }
+        function tinh4() {
+            let a =parseInt(document.getElementById("so1").value)
+            let  b= parseInt(document.getElementById("so2").value)
+            let thuong= a/b
+            document.getElementById("ketqua").innerHTML= "Result" + thuong
+
+        }
+        </script>
+
+</body>
+</html>
