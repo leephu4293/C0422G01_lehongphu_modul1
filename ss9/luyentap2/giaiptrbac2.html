@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bac hai </title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap a "))
+    let b = parseInt(prompt("nhap b "))
+    let c = parseInt(prompt(" nhap c "))
+    let del = (b*b) -4*(a * c)
+    if (del < 0 ){
+        alert("phuong trinh vo nghiem ")
+    }
+    if (del == 0 ) {
+        x=  (-b)/ (2*a)
+        alert("phuong trinh co nghiem kep x1=x2: " + x )
+    }
+    if (del > 0 ) {
+        x1= ((-b) + Math.sqrt(del)) / (2*a)
+        x2 = ((-b) - Math.sqrt(del)) / (2*a)
+        alert(" phuong trinh co nghiem x1 la:" + x1 + "và nghiem x2 là:" + x2)
+    }
+
+</script>
+</body>
+</html>

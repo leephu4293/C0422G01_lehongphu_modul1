@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thuNhap= parseInt(prompt(" nhap so thu nhap "))
+       tienThue  = " "
+    if ( thuNhap < 15000000 && thuNhap >= 10000000) {
+        tienThue = (thuNhap - 11000000) * 0.1
+    } else if (thuNhap < 20000000){
+        tienThue= (thuNhap - 11000000) * 0.2
+    } else {
+        tienThue= (thuNhap - 11000000)* 0.4
+    }
+    alert("tien thue phai chiu " + tienThue)
+</script>
+
+</body>
+</html>

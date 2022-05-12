@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuDien = parseInt(prompt("nhap chu dien "))
+    let thanhToan = " "
+    if ( chuDien < 50 ) {
+        thanhToan  = chuDien * 1678
+    } else if (chuDien < 100) {
+        thanhToan = chuDien * 1734
+    } else if ( chuDien <200 ){
+        thanhToan = chuDien * 2014
+    }else {
+        thanhToan= chuDien * 2536
+    }
+    alert("tien dien la:" + thanhToan)
+</script>
+</body>
+</html>
