@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoc sinh </title>
+</head>
+<body>
+<script>
+    let diemthi= parseFloat(prompt("nhap diem thi "))
+    let giuaky = parseFloat(prompt("nhap diem thi giua ky "))
+    let cuoiky= parseFloat(prompt("nhap diem thi cuoi ky "))
+    let avg = (diemthi+giuaky+cuoiky) / 3
+    if (avg >= 9  ) {
+        alert("học sinh gioi ")
+    } else if ( avg >= 7 ) {
+        alert("hoc sinh kha ")
+    } else if ( avg >= 6 ) {
+        alert("hoc sinh tb ")
+    } else {
+        alert("hoc sinh yeu ")
+    }
+</script>
+</body>
+</html>

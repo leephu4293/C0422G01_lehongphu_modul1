@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoahong</title>
+</head>
+<body>
+   <input type="text"  placeholder="nhap san pham "  id="nhap">
+   <input type="button" value="thanh tien" onclick="ketqua()">
+    <p id="out">   </p>
+<script>
+ function ketqua() {
+ let sanpham =parseInt(document.getElementById("nhap").value )
+     doanhthu = sanpham * 10000
+      tien = " "
+     if ( sanpham > 5000) {
+         tien= doanhthu * 0.2
+     } else if ( sanpham > 2000) {
+         tien= doanhthu * 0.1
+     } else {
+         tien= doanhthu * 0.05
+     }
+     document.getElementById("out").innerText= "luong nhan vien " + tien
+ }
+
+</script>
+
+</body>
+</html>
