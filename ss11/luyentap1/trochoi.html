@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trochoi</title>
+</head>
+<body>
+   <input type="button" value="bắt đầu " onclick="batdau()">
+<script>
+ function batdau() {
+     let range = parseInt(prompt("nhapkhoangso:"))
+     let randomNum =  Math.floor(Math.random() * (range +1));
+     console.log(randomNum)
+     for ( i=1; i<4; i++) {
+         guessNum = parseInt(prompt("nhap so doan "))
+         if (guessNum == randomNum) {
+             alert("ban đúng")
+             break;
+         }
+         if (guessNum < randomNum) {
+             alert("so ban doan be hon ")
+         } else {
+             alert('so ban nhap lon hon')
+         }
+     }
+     alert("ban da het luot")
+
+ }
+</script>
+</body>
+</html>

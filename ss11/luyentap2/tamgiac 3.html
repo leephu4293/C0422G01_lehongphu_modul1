@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ /*let star= "*"
+ let space = ""
+ let tamGiac= " "
+    for (i=1;i<5;i++){
+        for (j=1;j<= 5-i;j++){
+            tamGiac+= star
+        }
+        tamGiac= space + tamGiac
+        document.write(tamGiac +"<br>");
+        space += "&nbsp&nbsp"
+        tamGiac= ""
+    }*/
+
+ let star= "*"
+ let space = "&nbsp&nbsp"
+ let tamGiac= " "
+ for (i=1;i<5;i++){
+     for (j=1;j<= 5-i;j++){
+         tamGiac+= space
+     }
+     tamGiac= tamGiac +star;
+     document.write(tamGiac +"<br>");
+     star += "*"
+     tamGiac= ""
+ }
+</script>
+</body>
+</html>
