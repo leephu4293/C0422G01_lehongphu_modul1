@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tudien </title>
+</head>
+<body>
+<input type="text" placeholder="Nhập từ tiếng anh muốn  dịch" style="width: 200px" id="from">
+<button type="button" onclick="tuDien()">Dịch</button>
+<p id="result">Result:</p>
+<script>
+    let eng = ["apple","blue", "red"]
+    let vie = ["tao","mau xanh "," do "]
+    let count =0
+    console.log(eng)
+    function tuDien() {
+        let check = document.getElementById("from").value
+        for (let i = 0; i <eng.length;i++){
+            console.log(check)
+            if(check == eng[i]){
+                document.getElementById("result").innerText = "Result: " + vie[i]
+                count++
+                break
+            }
+        }if(count == 0){
+            document.getElementById("result").innerText = "Result: Từ bạn nhập chưa có trong từ điển"
+        }
+    }
+    </script>
+</body>
+</html>
