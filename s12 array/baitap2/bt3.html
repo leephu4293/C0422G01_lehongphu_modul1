@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhapmang</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('nhap chieu dai cua mang '));
+    let arr = []
+    for (i=0; i < n; i++){
+        arr[i]= prompt("nhap mang ")
+    }
+    document.write(arr);
+    let count = 0
+    for(i=0; i<arr.length; i++){
+        if (arr[i]/arr[i]==1){
+            count ++
+        }
+    }
+    document.write("so ky tu so la" + count)
+</script>
+</body>
+</html>

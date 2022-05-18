@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     let n= parseInt(prompt("nhap do dai cua mang "))
+     let arr= []
+     for(i=0;i<n; i++){
+         arr[i]= prompt("nhap mang ")
+     } document.write(arr +"<br>")
+      for (i=0; i<arr.length; i++){
+          if( arr[i]== "-"){
+              arr[i]= "_"
+          }
+      } document.write('mang thay doi'+ arr)
+ </script>
+</body>
+</html>

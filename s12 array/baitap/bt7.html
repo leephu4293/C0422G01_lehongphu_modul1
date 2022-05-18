@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+       let arr = [];
+       for(i=0; i<10; i++){
+           arr[i]= prompt("nhap phan tu mang ")
+       }
+       let V = prompt("nhap V ")
+        for (i=arr.length;i>= 0;i--){
+            if (V== arr[i]) {
+                for (j = i; j < arr.length; j++) {
+                    arr[j] = arr[j + 1]
+                    if (j == arr.length - 1) {
+                        arr[j] = 0
+                    }
+                }
+            }
+        }
+         document.write(arr)
+   </script>
+
+</body>
+</html>

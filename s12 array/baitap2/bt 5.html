@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('nhap chuoi mot ')
+    let str1 = prompt('nhap chuoi hai ')
+    let count= 0
+    if (str.length == str1.length) {
+        for (i = 0; i < str.length; i++) {
+            if (str[i] != str1[i]) {
+                alert(" hai chuoi khong giong nhau ")
+                count++
+                break;
+            }
+        }
+        if (count == 0) {
+            alert(' hai chuoi giong nhau ')
+        }
+    } else {
+        alert("hai chuoi khong giong nhau")
+    }
+</script>
+</body>
+</html>

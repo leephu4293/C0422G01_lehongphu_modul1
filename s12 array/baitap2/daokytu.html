@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>daokytu</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhap ky tu ")
+
+    let arr = []
+    for (i = 0; i < str.length; i++) {
+        arr[i] = str[i]
+    }
+    document.write(arr +"<br>")
+    let first = 0
+    let end = arr.length - 1
+    while (first < end) {
+        let a = arr[first]
+        arr[first] = arr[end]
+        arr[end] = a
+        first++
+        end--
+    }
+
+</script>
+</body>
+</html>

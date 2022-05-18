@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let arr = [];
+    for (i = 0; i < 10; i++) {
+        arr[i] = prompt("nhap phan tu mang")
+    }
+    let V = prompt(" nhap so V ")
+    for (i = 0; i < arr.length; i++) {
+        if (V == arr[i]) {
+            a++
+            document.write(' V la mot phan tu mang ' + V)
+            break
+        }
+
+    }
+    if (a == 0) {
+        document.write('V khong la phan tu cua mang ')
+    }
+
+</script>
+</body>
+</html>

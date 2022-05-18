@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("nhap chieu dai cua mang "))
+    let arr = []
+     for (i=0;i< n ; i++ ){
+        arr[i]= prompt("nhap phan tu cua mang ")
+     }
+       let first= 0
+       let  end = arr.length-1
+       while ( first < end) {
+           let a = arr[first];
+           arr[first] = arr[end]
+           arr[end] = a
+           first++
+           end--
+       }
+     document.write(arr)
+
+</script>
+</body>
+</html>
