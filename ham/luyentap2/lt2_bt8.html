@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     let  n = +prompt("nhap chieu dai mang so nguyen:");
+     let arr = [];
+     for (i=0; i<n; i++){
+         arr[i]= +prompt("nhap vao phan tu mang:")
+     } document.write(arr + "<br>");
+      function sưaparr( [] ) {
+          let first = 0
+          let end = arr.length-1
+       while (first < end){
+         let c = arr[first]
+         arr[first]= arr[end];
+         arr[end]= c;
+         first++
+           end--
+     }
+          document.write(arr)
+      }
+    sưaparr([]);
+ </script>
+</body>
+</html>

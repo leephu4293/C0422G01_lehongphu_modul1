@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doi</title>
+</head>
+<body>
+<p> CHUYỂN ĐỔI ĐỘ DÀI </p>
+<input type="number" id="giaTri">
+<select id="op1">
+    <option value="meter"> meter</option>
+    <option value="foot"> foot</option>
+</select>
+<select id="op2">
+    <option value="meter"> meter</option>
+    <option value="foot"> foot</option>
+</select>
+<button onclick="chuyenDoi()"> change</button>
+<p id="result"></p>
+<script>
+    function chuyenDoi() {
+        let a = document.getElementById("giaTri").value;
+        let chon1 = document.getElementById("op1").value;
+        let chon2 = document.getElementById("op2").value;
+        let result = "";
+        if (chon1 == "meter" && chon2 == "meter") {
+            result = a;
+        }
+        if (chon1 == "foot" && chon2 == "foot") {
+            result = a;
+        }
+        if (chon1 == "meter" && chon2 == "foot") {
+            result = a * 3.279;
+        }
+        if (chon1 == "foot" && chon2 == "meter") {
+            result = a * 0.305;
+        }
+        document.getElementById("result").innerText= result;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhap a ");
+    let b = +prompt("nhap b ");
+    document.write('so a là' + a + "so b la " + b + "<br>");
+    function checknum(num, num1) {
+        let c = num;
+        num = num1;
+        num1 = c;
+        document.write("so a la" + num + "so b la " + num1);
+    }
+    checknum(a, b);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num =parseInt(prompt("nhap so nguyen "));
+    if (num <10000) {
+        function Check() {
+            let count = 0;
+            if (num == 0 || num == 1) {
+                alert(" khong phai  so nguyen to");
+            }
+            for (let i = 2; i <= num; i++) {
+                count = 0;
+                if (num % 2 == 0) {
+                    count++
+                    alert(num + " khong la so nguyen to ");
+                    break;
+
+                }
+
+            }
+            if (count == 0) {
+                alert(num + "la so nguyen to ");
+            }
+        }
+
+        Check()
+    }else {
+        alert("nhap duoi 10000");
+    }
+
+</script>
+</body>
+</html>
