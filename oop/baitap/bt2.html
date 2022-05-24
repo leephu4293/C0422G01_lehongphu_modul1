@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(tempt) {
+            this.tempt = tempt;
+        }
+        getF() {
+            return 1.8 * this.tempt + 32;
+        }
+
+        getKevin() {
+            return this.tempt + 273;
+        }
+
+    }
+
+    let tempt = +prompt("nhap nhiet do ");
+    let temperature = new Temperature(tempt);
+    document.write("do F la " + temperature.getF() + "<br>");
+    document.write("do K la " + temperature.getKevin() + "<br>");
+
+</script>
+</body>
+</html>

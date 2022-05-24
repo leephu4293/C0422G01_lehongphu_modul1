@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class  Rectangle {
+        constructor(length,width) {
+            this.length = length;
+            this.width= width;
+        }
+        getArea (){
+            return this.length*this.width;
+        }
+        getPerimeter(){
+            return 2 *(this.length+this.width);
+        }
+    }
+
+    let length= +prompt("nhap chieu dai: ");
+    let width = +prompt("nhap chieu rong:");
+    let rectangle = new Rectangle(length,width);
+    alert("dien tich la " + rectangle.getArea());
+    alert("chu vi la " + rectangle.getPerimeter());
+</script>
+</body>
+</html>
