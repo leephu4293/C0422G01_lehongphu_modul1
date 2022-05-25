@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quatao</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(newWeight) {
+            this.weight = newWeight;
+        }
+
+        getDecrease() {
+            return this.weight--;
+        }
+
+    }
+
+    class Human {
+        constructor(name, weight1, gender) {
+            this.name = name
+            this.gender = gender;
+            this.weight1 = weight1;
+        }
+
+        getNane() {
+            return this.name;
+        }
+
+        getWeight() {
+            return this.weight1;
+        }
+
+        getGender() {
+            return this.gender;
+        }
+
+        setWeight(newWeight) {
+            this.weight1 = newWeight;
+        }
+
+        setGender(newGender) {
+            this.gender = newGender;
+        }
+
+        setName(newName) {
+            this.name = newName;
+        }
+
+        eatApple(apple) {
+            if (apple.getWeight() > 0) {
+                this.weight1++;
+                apple.getDecrease();
+
+            } else {
+                document.write("het tao;");
+
+            }
+        }
+
+        talk(say) {
+            document.write(say + "<br>");
+        }
+    }
+
+    let apple = new Apple();
+    apple.setWeight(10);
+    let adam = new Human("Adam", 60, "Male");
+    let eva = new Human("Eva", 50, "Female");
+    for (i = 0; i < 6; i++) {
+        adam.talk("an tao di em " + "<br>");
+        eva.talk("ok anh oi " + "<br>");
+        eva.eatApple(apple);
+        document.write("can nang eva:" + eva.getWeight() + "qua tao con:" + apple.getWeight() + "<br>");
+        eva.talk("an ta odi anh " +"<br>")
+        adam.talk("ok em oi " + "<br>")
+        adam.eatApple(apple);
+        document.write("can nang adam:" + adam.getWeight() + "qua tao con:" + apple.getWeight() + "<br>");
+    }
+
+</script>
+</body>
+</html>

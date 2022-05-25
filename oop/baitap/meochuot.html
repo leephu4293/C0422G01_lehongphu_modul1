@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rat {
+        constructor(name, weight, speed, live) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+            this.live = live;
+        }
+
+        getLive() {
+            return this.live;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        checkLive() {
+            if (this.live) {
+                return "còn sống";
+            } else {
+                return "đã chết";
+            }
+        }
+
+        say(string) {
+            return string;
+        }
+
+        getSpeed() {
+            return this.speed;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        toString() {
+            return "Chuột " + this.name + " nặng " + this.weight
+                + " có tốc độ " + this.speed + " " + this.checkLive() + "<br>";
+        }
+    }
+
+    class Cat {
+        constructor(name, weight, speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        say(string) {
+            return string;
+        }
+
+        catchTheRat(rat) {
+            if (rat.getSpeed() < this.speed) {
+                return "đã bắt được chuột ";
+            } else {
+                return rat.getName() + " đã thoát";
+            }
+        }
+
+        eatTheRat(rat) {
+            if (rat.getLive()) {
+                this.weight = this.weight + rat.getWeight();
+            } else {
+                this.weight = this.weight;
+            }
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        toString() {
+            return "Mèo " + this.name + " nặng " + this.weight
+                + " có tốc độ " + this.speed + "<br>";
+        }
+    }
+</script>
+</body>
+</html>

@@ -18,12 +18,14 @@
             return this.tempt + 273;
         }
 
+
     }
 
     let tempt = +prompt("nhap nhiet do ");
     let temperature = new Temperature(tempt);
     document.write("do F la " + temperature.getF() + "<br>");
     document.write("do K la " + temperature.getKevin() + "<br>");
+
 
 </script>
 </body>

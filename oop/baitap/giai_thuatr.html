@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arg1 = [1,2,3,1,2,3,5]
+    let count = 1
+    let arr = []
+    let result = true
+
+    for(let i =0;i<arg1.length;i++){
+        count = 1
+        for(let j = i+1;j<arg1.length;j++){
+            if(arg1[i] == arg1[j]){
+                count++
+                arg1.splice(j,1)
+            }
+        }
+        arr.push(count)
+    }
+    for(let i =0;i<arr.length;i++){
+        if(arr[0] == arr[i]){
+            result = true
+        }else{
+            result = false
+        }
+    }
+    if (result == true){
+        alert("Số lần xuất hiện của các phần tử bằng nhau")
+    }
+    else {
+        alert("số lần xuât hiện của các phần tử không bằng nhau")
+    }
+</script>
+</body>
+</html>
