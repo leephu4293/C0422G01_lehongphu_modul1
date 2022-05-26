@@ -13,9 +13,15 @@
             getStatus(){
                 return this.status;
             }
+            turnOn(){
+                this.status = true;
+            }
+            turnOff(){
+                this.status = false;
+            }
         }
         class SwitchButton{
-            constructor(status, lamp) {
+            constructor(status,lamp) {
                 this.status = status;
                 this.lamp = lamp;
             }
@@ -29,17 +35,16 @@
                 this.lamp= ElectricLamp
             }
             TurnOn(){
-               this.status=true;
+               this.lamp.status=true;
                return this.status= true;
             }
             TurnOff(){
-                this.status= false;
+                this.lamp.status= false;
                 return this.status= false;
             }
         }
-        let electric = new ElectricLamp();
-        let switchbut = new SwitchButton(electric);
-
+        let electric = new ElectricLamp(false);
+        let switchbut = new SwitchButton(electric,false);
         for (i=0; i<10;i++){
             document.write(switchbut.TurnOn() +"<br>");
             document.write(switchbut.TurnOff() + "<br>");
