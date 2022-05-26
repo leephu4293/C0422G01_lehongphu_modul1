@@ -10,14 +10,9 @@
             constructor(status) {
                 this.status = status;
             }
-            getStatus(){
+
+            getStatus() {
                 return this.status;
-            }
-            turnOn(){
-                this.status = true;
-            }
-            turnOff(){
-                this.status = false;
             }
         }
         class SwitchButton{
@@ -44,7 +39,8 @@
             }
         }
         let electric = new ElectricLamp(false);
-        let switchbut = new SwitchButton(electric,false);
+        let switchbut = new SwitchButton(false,electric);
+        ;
         for (i=0; i<10;i++){
             document.write(switchbut.TurnOn() +"<br>");
             document.write(switchbut.TurnOff() + "<br>");
