@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinhthue</title>
+</head>
+<body>
+<input type="number" ; id="input" ;>
+<button onclick="ketqua()"> Tinh</button>
+<p id="xuat"></p>
+</body>
+<script>
+    function ketqua() {
+        let a = document.getElementById("input").value;
+        let thue = "";
+        let luong = "";
+        if (a >= 15000000) {
+            luong = a * 0.8
+            thue = a * 0.2
+        } else if (a >= 7000000) {
+            luong = a * 0.9;
+            thue = a * 0.1;
+        } else {
+            thue = a * 0.05
+            luong = a * 0.95
+        }
+        document.getElementById("xuat").innerHTML = "tien luong la:" + luong + "<br>" + "tien thue la:" + thue;
+    }
+</script>
+</html>

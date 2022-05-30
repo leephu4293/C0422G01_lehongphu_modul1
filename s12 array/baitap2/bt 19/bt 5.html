@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonacy</title>
+</head>
+<body>
+<script>
+    let f0 = 0;
+    let f1 = 1;
+    let fn = f0 + f1;
+    let count = 0
+    while (fn < 10000) {
+        count = 0;
+        f0 = f1
+        f1 = fn
+        fn = f0 + f1;
+       for (let i =2; i < fn; i++) {
+            if (fn % i == 0) {
+                count++
+                break
+            }
+        }
+        if (count == 0) {
+            document.write(fn + "<br>")
+        }
+    }
+</script>
+</body>
+</html>

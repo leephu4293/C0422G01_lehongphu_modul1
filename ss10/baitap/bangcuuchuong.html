@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: cyan;
+        }
+        table {
+            background: burlywood;
+        }
+        td:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<h1 > BẢNG CỬU CHƯƠNG </h1>
+
+</body>
+<script>
+    let table = "<table style='width: 50%' cellpadding='5'  cellspacing='2' border='2' align='center'>"
+    let i=1
+    let j=1
+    for (; i < 11 ; i++){
+        table +=  "<tr>"
+        for ( j=1; j<11; j++){
+            table += '<td>'+ i + "x" + j+  "=" + i*j + "</td>" ;
+        }
+        table += "</tr>"
+    }
+    table += "</table>"
+    document.write(table)
+
+
+</script>
+</html>

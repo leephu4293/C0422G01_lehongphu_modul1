@@ -9,23 +9,22 @@
     let arr =[ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus" ];
     let arr1 = [ "UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo" ];
     let check = prompt("nhap chuoi muon kiem tra:");
-    let count = 0
+    let count = 0;
          function findStart(str) {
              for (let i=0; i<arr.length-1; i++ ){
-
                  if (str == arr[i]){
                     document.write( " chom sao tuong ung:" + arr1[i] );
-                   count++
+                   count++;
                      break;
 
                  }
              } if  (count==0){
-                 alert("khong co chòm sao tuong ung:")
+                 alert("khong co chòm sao tuong ung:");
              }
 
               return;
          }
-         findStart(check)
+         findStart(check);
 </script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*let num = parseInt(prompt("nhap so "))
+         let count= 0;
+         for (i=2; i<= num;i++){
+             let count= 0;
+             for (j = 2; j < i ; j++) {
+                 if (i % j == 0) {
+                     count ++
+                     break;
+                 }
+             }
+             if (count==0) {
+                 document.write(i + "<br>");
+             }
+         }
+    document.write("<hr>")
+*/
+
+    /*let n = +prompt('nhap chieu dai mang ');
+    let arr = [];
+    for (i = 0; i < n; i++) {
+        arr[i] = +prompt('nhap phan tu mang');
+    }
+    document.write(arr + '<br>'); //12244
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] != "") {
+            count = 1
+            for (j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                    arr[j]= "";
+                }
+            }
+            document.write("phan tu " + arr[i] + 'xuat hien ' + count + "<br>")
+        }
+    }*/
+    let  num  = +prompt("nhap so luong so nguyen to ");
+    let count = 0
+     let uoc = 0
+    let primenum=2
+    while (count < num ) {
+        for (i = 2; i < primenum; i++) {
+            if (primenum % i == 0) {
+                uoc++
+                break;
+            }
+        }
+        if (uoc == 0) {
+            document.write(primenum + "<br>");
+            count++
+        }
+        uoc = 0;
+        primenum++;
+
+    }
+
+
+
+</script>
+</body>
+</html>

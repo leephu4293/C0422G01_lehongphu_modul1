@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doixung</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhap chuoi ");
+    //function checkstr() {
+    let first = 0;
+    let end = str.length - 1;//12521
+    let count = 0;
+    while (first < end) {
+        if (str[first] != str[end] ){
+            count++;
+            break;
+        }
+        first++;
+        end--;
+    }
+    if (count == 0) {
+        alert("ok");
+    } else {
+        alert("not");
+    }
+    //}
+    //checkstr();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>songuyento </title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("nhập số luong muon xem:"))
+    let count = 0
+    let uoc=0
+    let primeNum = 2
+    while (count != num) {
+        for (let i=2; i < primeNum; i++) {
+            if (primeNum%i==0) {
+                uoc++;
+                break;
+            }
+
+        }
+        if (uoc == 0) {
+            document.write(primeNum + "<br>");
+            count++
+        } primeNum++
+        uoc=0
+    }
+</script>
+</body>
+</html>

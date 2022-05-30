@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>songuyento </title>
+</head>
+<body>
+<script>
+   let num = parseInt(prompt("nhap so nguyen "))
+   for(i=0;i<=num;i++){
+       if(i==0 || i==1 ){
+           document.write(i +'<br>')
+       }
+       for(j=2; j<i;j++){
+           if (i%j==0){
+               document.write(i+"<br>")
+               break;
+           }
+       }
+   }
+
+
+
+</script>
+</body>
+</html>

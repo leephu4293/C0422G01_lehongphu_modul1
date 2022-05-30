@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str= prompt("nhap chuoi ky tu ");
+    let count= 0
+    arr= str.split("")
+    console.log(arr)
+    let first = 0;
+    let end = arr.length
+    while (first < end){
+        if (arr[first] === arr[end]){
+            arr.splice(end,1)
+        }
+        first++
+        end--
+
+    }
+    console.log(arr)
+</script>
+</body>
+</html>

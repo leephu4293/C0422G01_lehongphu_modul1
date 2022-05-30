@@ -18,10 +18,11 @@
         for (i = 0; i < arr.length; i++) {
             if (num == arr[i]) {
                 count++;
+                return;
             }
         }
         if (count == 0) {
-            alert("-1");
+            alert("-1")
         }
         document.write("ky tu kiem tra:" + check + "xuat hien " + count + "lan ");
     }
